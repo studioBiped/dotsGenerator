@@ -83,6 +83,9 @@ function setup() {
   sliderScale = createSlider(0, 2, 2, 1);
   sliderScale.position(600, height + 25);
   sliderScale.style('width', '50px');
+  
+  exportNameInput = createInput('frameExport_dot_');
+  exportNameInput.position(400, height + 25 * 5);
 
   colours = {
     drawModeFill: color(255, 255, 255, 125),
