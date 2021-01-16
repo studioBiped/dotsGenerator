@@ -378,7 +378,7 @@ function draw() {
   }
 
   if (exportStringArr.length > 0 && frameCount % 2 == 0) {
-    saveStrings(exportStringArr[0], 'framesExport2_' + exportCounter, 'xst');
+    saveStrings(exportStringArr[0], exportNameInput.value() + exportCounter, 'xst');
     exportStringArr.shift();
     exportCounter++;
   }
